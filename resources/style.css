@@ -1,0 +1,164 @@
+:root {
+    --color-primary: #42471e;
+    --color-secondary: #e7891c;
+    --color-background: #f7f3e8;
+    --color-surface: #fffdf7;
+    --color-text: #37392c;
+    --color-border: #e5dcc7;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-block-size: 100vh;
+    min-block-size: 100svh;
+    margin: 0;
+    padding: clamp(1rem, 4vw, 3rem);
+    background: var(--color-background);
+    color: var(--color-text);
+    font: 1rem / 1.55 system-ui, sans-serif;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+    inline-size: min(100%, 66rem);
+    overflow: hidden;
+    border: 0.0625rem solid var(--color-border);
+    border-radius: 1.25rem;
+    background: var(--color-surface);
+}
+
+.shop-logo {
+    position: relative;
+    border-inline-end: 0.0625rem solid var(--color-border);
+}
+
+.shop-logo img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+.shop-info {
+    padding: clamp(2rem, 5vw, 4rem);
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin: 0 0 1.25rem;
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.location::before {
+    inline-size: 1.4rem;
+    block-size: 0.125rem;
+    background: var(--color-secondary);
+    content: "";
+}
+
+h1 {
+    margin: 0;
+    color: var(--color-primary);
+    font: 400 clamp(2.5rem, 5.25vw, 4.125rem) / 1.05 Georgia, serif;
+    letter-spacing: -0.045em;
+}
+
+h1 span {
+    display: block;
+    margin-block-start: 0.75rem;
+    font: 400 1.1rem / 1.4 system-ui, sans-serif;
+    letter-spacing: 0;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin: 2.25rem 0 1.75rem;
+    padding-block-start: 1.5rem;
+    border-block-start: 0.0625rem solid var(--color-border);
+}
+
+.contact-details dt {
+    margin-block-end: 0.35rem;
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.contact-details dd {
+    margin: 0;
+}
+
+.contact-details a {
+    color: inherit;
+    text-decoration-color: var(--color-primary);
+    text-underline-offset: 0.2em;
+}
+
+.directions {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-block-size: 2.75rem;
+    padding: 0.65rem 0.95rem;
+    border-radius: 0.5rem;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    font-size: 0.9rem;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.directions svg {
+    flex: none;
+    inline-size: 1.2rem;
+    block-size: 1.2rem;
+}
+
+.directions:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+a:focus-visible {
+    outline: 0.125rem solid var(--color-primary);
+    outline-offset: 0.2rem;
+}
+
+@media (max-width: 800px) {
+    .shop {
+        grid-template-columns: minmax(0, 1fr);
+        max-inline-size: 33rem;
+    }
+
+    .shop-logo {
+        aspect-ratio: 3 / 2;
+        border-inline-end: 0;
+        border-block-end: 0.0625rem solid var(--color-border);
+    }
+
+    .shop-info {
+        padding: clamp(1.25rem, 5vw, 2.5rem);
+    }
+
+    h1 {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+    }
+}
