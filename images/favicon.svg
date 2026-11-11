@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="383 196 532 532">
+  <defs>
+    <linearGradient id="leaf" x2="0.85" y2="1">
+      <stop stop-color="#4a4e20"/>
+      <stop offset="1" stop-color="#757a3b"/>
+    </linearGradient>
+    <radialGradient id="fruit" cx="34%" cy="32%" r="70%">
+      <stop stop-color="#ffbd3b"/>
+      <stop offset=".6" stop-color="#ff9c06"/>
+      <stop offset="1" stop-color="#f38200"/>
+    </radialGradient>
+  </defs>
+  <rect x="383" y="196" width="532" height="532" rx="100" fill="#fcf7e9"/>
+  <g fill="url(#leaf)">
+    <path d="M817 391C777 387 713 391 674 359C646 338 627 308 614 284C693 292 742 313 781 365C791 379 802 385 817 391Z"/>
+    <path d="M654 397C612 388 587 424 529 429C490 433 454 421 413 426C454 391 505 368 548 365C589 361 622 376 654 397Z"/>
+    <path d="M775 412C741 436 767 478 751 537C740 581 710 611 688 640C671 603 667 558 684 515C703 466 742 430 775 412Z"/>
+  </g>
+  <g fill="#fcf7e9">
+    <path d="M650 306C699 334 746 369 799 385C746 376 694 337 650 306Z"/>
+    <path d="M428 419C487 390 559 383 630 395C558 389 490 396 428 419Z"/>
+    <path d="M763 423C724 461 702 526 690 612C699 531 718 467 763 423Z"/>
+  </g>
+  <path fill="none" stroke="#4c5123" stroke-width="9" stroke-linecap="round" d="M881 365C850 395 817 389 781 405C758 415 727 404 703 411C679 416 657 431 649 447M704 411C678 407 656 396 630 395"/>
+  <path fill="url(#fruit)" d="M646 436C676 454 669 493 651 524C628 566 586 597 549 603C513 608 490 588 490 555C489 521 511 487 538 463C573 432 616 420 646 436Z"/>
+  <path fill="#fff6da" d="M511 534C519 501 546 470 582 454C553 479 528 506 511 534Z"/>
+</svg>
